@@ -1,0 +1,8 @@
+Model Information:
+* title:	Futuristic Aged Billboard
+* source:	https://sketchfab.com/3d-models/futuristic-aged-billboard-15d4ecd3b7c04e29b8c470987546ae77
+* author:	Glowbox 3D (https://sketchfab.com/ra3id)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

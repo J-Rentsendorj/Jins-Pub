@@ -1,0 +1,229 @@
+* {
+    padding: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #080808;
+}
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    mix-blend-mode: exclusion;
+}
+
+#preloader{
+    background: rgb(32,31,30) url(/static/images/beer.gif) no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.section1 {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 3vmin;
+    padding-left: 10%;
+    padding-right: 30%;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 3vmin;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section2 {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    position: relative;
+    font-family: 'Cabin', sans-serif;
+    color: #ffeded;
+    text-transform: uppercase;
+    font-size: 3vmin;
+    padding-left: 70%;
+}
+
+.image {
+    opacity: 0.7;
+}
+
+section:nth-child(odd) {
+    justify-content: flex-end;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+    color: white;
+}
+
+.inner {
+    width: 60%;
+}
+
+.container {
+    text-align: center;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+    margin: 0 2em;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+}
+
+h1 {
+    font-size: 3em;
+} 
+
+section {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 3px 245px;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.content .text-box {
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    -webkit-transform: translate(-80px, 50px);
+    transform: translate(-80px, 50px);
+}
+
+.media-icons a {
+    color: #fff;
+    font-size: 2em;
+    margin: 32px;
+}
+
+.media-icons2 a {
+    color: #fff;
+    font-size: 2em;
+    margin: 80px;
+}
+
+.media-icons{
+    padding-right: 250px;
+}
+
+#contact {
+    margin: auto;
+    width: 350px;
+    padding: 20px;
+    transform: translate(-75%, -40%);
+    font-size: 25px;
+    cursor: pointer;
+}
+
+form{
+    margin: 20px;
+    padding-top: 650px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea{
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white; 
+    padding: 10px;
+    font-size: 18px;
+}
+
+input, select, textarea{
+    color: white
+}
+
+textarea{
+    height: 150px
+}
+
+button{
+    display: block;
+    width: 95%;
+    padding: 3px;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: red;
+}
+
+audio{
+    opacity: 0.15;
+}

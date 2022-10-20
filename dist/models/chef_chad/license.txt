@@ -1,0 +1,8 @@
+Model Information:
+* title:	Chef Chad
+* source:	https://sketchfab.com/3d-models/chef-chad-5ceda9118e514f6880e12670b30eb828
+* author:	Lola Lipsum (https://sketchfab.com/lorem.ipsum)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works

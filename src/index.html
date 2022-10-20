@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Jin's Pub</title>
+    <!-- EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init('9YaJES0fEd7486k6I');
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('service_jintonic13', 'template_jintonic13', this)
+                    .then(function () {
+                        console.log('SUCCESS!');
+                    }, function (error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<div id="preloader"></div>
+<body>
+    <canvas class="webgl"></canvas>
+    <audio id="audio" autoplay loop>
+        <source src="/static/rain.mp3">
+    </audio>
+    <script>
+        var audio = document.getElementById("audio");
+        audio.volume = 0.03;
+    </script>
+    <audio id="music" autoplay loop controls>
+        <source src="/static/tyrell_corporation.wav">
+    </audio>
+    <script>
+        var music = document.getElementById("music");
+        music.volume = 0.03;
+    </script>
+    <section class="section1">
+        <div class="name">
+            <h1>Baljinnyam "Jin" Rentsendorj</h1>
+            <h4>Full Stack Developer</h4>
+        </div>
+    </section>
+    <section class="section2">
+        <div class="media-icons2">
+            <h2>Projects</h2>
+            <a href="https://github.com/J-Rentsendorj" target="_blank" class="icon"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+    <script>
+        $(document).ready(function () {
+            $("#showForm").on("click", function () {
+                $("#contact").toggle();
+            });
+        });
+    </script>
+    <div class="section">
+        <div class="media-icons">
+            <h2>Let's Talk!</h2>
+            <a onclick="return false" href="#" id="showForm"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/baljinnyam-rentsendorj?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHFRHIKzuRl62PLGX9TRaVA%3D%3D"
+                target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div id="contact">
+            <div class="text-box">
+                <form id="contact-form">
+                    <input type="hidden" name="contact_number">
+                    <label>Name</label>
+                    <input type="text" name="name">
+                    <label>Email</label>
+                    <input type="email" name="email">
+                    <label>Message</label>
+                    <textarea name="message"></textarea>
+                    <button onclick="send()">SEND</button>
+                </form>
+                <script>
+                    function send() {
+                        alert("Email Sent!")
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <section class="sec-01">
+        <div class="container">
+            <div class="content">
+                <div class="image">
+                    <img src="/static/pic2.jpg" alt="OEF2013-2014">
+                </div>
+                <div class="text-box">
+                    <h2>About Me</h2>
+                    <h3>A software developer and U.S. Army veteran with excellent leadership
+                        experience gained through 7+ years of leading teams in highly ambiguous
+                        and complex environments. Experience building full stack web applications
+                        across multiple programming languages.
+                    </h3>
+                    <h3>Python, MERN, Java, Three.js</h3>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="Jin_Developer_Resume.pdf" target="_blank" class="icon"><i class="fas fa-file"></i></a>
+                <a href="https://github.com/J-Rentsendorj" target="_blank" class="icon"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/baljinnyam-rentsendorj?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHFRHIKzuRl62PLGX9TRaVA%3D%3D"
+                    target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Project Video  -->
+    <video id="video" playsinline webkit-playsinline loop autoplay width="1290" height="1040"
+        src="../static/videos/gymbois_demo.mp4" style="display: none"></video>
+    <!-- Scroll reveals  -->
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.main-title, .section-title', { delay: 500, orgin: 'left' });
+        ScrollReveal().reveal('.sec-01 .image, .info', { delay: 600, origin: 'bottom' });
+        ScrollReveal().reveal('.text-box', { delay: 700, origin: 'right' });
+        ScrollReveal().reveal('.media-icons i', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.media-icons2 i', { delay: 500, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.sec-02 .image, .sec-03 .image', { delay: 500, origin: 'top' });
+        ScrollReveal().reveal('.media-info li', { delay: 500, origin: 'left', interval: 200 });
+    </script>
+    <script>
+        // PreLoader
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function () {
+            loader.style.display = "none"
+        })
+    </script>
+</body>
+</html>

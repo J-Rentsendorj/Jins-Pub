@@ -1,0 +1,8 @@
+Model Information:
+* title:	Japanese pub scan
+* source:	https://sketchfab.com/3d-models/japanese-pub-scan-f033a0934b9249158b073d15ea68b3cb
+* author:	Miguel Bandera (https://sketchfab.com/miguelbandera)
+
+Model License:
+* license type:	SKETCHFAB Standard (https://sketchfab.com/licenses)
+* requirements:	Under basic restrictions, use worldwide, on all types of media, commercially or not, and in all types of derivative works
