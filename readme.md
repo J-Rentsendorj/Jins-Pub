@@ -1,16 +1,9 @@
-# Three.js Journey
+Jin's Pub: Creative personal portfolio app for showcasin past and present tech projects.
 
-## Setup
-Download [Node.js](https://nodejs.org/en/download/).
-Run this followed commands:
+TECHSTACK: JavaScript, Three.js, HTML, CSS, JQuery
 
-``` bash
-# Install dependencies (only the first time)
-npm install
+●	Developed the front-end with use of Three.js and JQuery for an immersive user experience.  
 
-# Run the local server at localhost:8080
-npm run dev
+●	Built the app with WebGL and imported Blender models for depth, texture, lighting, and animations for interactive user interface and experience. 
 
-# Build for production in the dist/ directory
-npm run build
-```
+●	Designed the portfolio with user in mind for efficient controls, clean presentation/ animations and navigations to external resources. 
