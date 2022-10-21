@@ -2,6 +2,7 @@ import './style.css'
 import * as THREE from 'three'
 import * as dat from 'lil-gui'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
+import { PlainAnimator } from "three-plain-animator";
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 
 /**
@@ -74,6 +75,7 @@ const roofTexture = textureLoader.load('/textures/concrete.jpg')
 const wallTexture = textureLoader.load('/textures/wood.jpg')
 const cloudTexture = textureLoader.load('/textures/smoke_05.png')
 const rockTexture = textureLoader.load('/textures/rock.jpg')
+const projectTexture = textureLoader.load('/textures/gymbois.png')
 
 /**
  * Objects 
@@ -148,12 +150,16 @@ sphere.position.z = - 1
  * Project 
  */
 // Video 
-const video = document.getElementById('video')
-const projectTexture = new THREE.VideoTexture(video)
+// const video = document.getElementById('video')
+// const projectTexture = new THREE.VideoTexture(video)
 
-const gymboisGeo = new THREE.PlaneGeometry(2, 0.9)
+const animator = new PlainAnimator(projectTexture, 5, 3, 11, 1)
+
+const gymboisTexture = animator.init()
+
+const gymboisGeo = new THREE.PlaneGeometry(2, 0.8)
 const gymboisMat = new THREE.MeshBasicMaterial({
-    map: projectTexture,
+    map: gymboisTexture,
     transparent: true,
     // depthWrite: false,
     // blending: THREE.AdditiveBlending
@@ -185,6 +191,7 @@ scene.add(project)
 project.position.x = -0.05
 project.position.z = 0.23
 project.position.y = - objectsDistance * 0.752
+project.position.y = - 2.95
 
 
 // Roof Object
@@ -518,6 +525,8 @@ window.addEventListener('scroll', updateSphere);
 
 const tick = () => {
     const elapsedTime = clock.getElapsedTime()
+
+    animator.animate()
 
     // Animate Models
     const deltaTime = elapsedTime - previousTime

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -33,21 +34,27 @@
 </head>
 <div id="preloader"></div>
 <body>
+    <!-- Project Video  -->
+    <!-- <video id="video" playsinline webkit-playsinline loop autoplay width="1290" height="1040"
+        src="../static/videos/gymbois_demo.mp4" style="display: none">
+    </video> -->
+    <!-- WebGL -->
     <canvas class="webgl"></canvas>
-    <audio id="audio" autoplay loop>
+    <!-- Audio -->
+    <audio id="audio" allow="autoplay" loop>
         <source src="/static/rain.mp3">
-    </audio>
+    </audio> 
     <script>
         var audio = document.getElementById("audio");
-        audio.volume = 0.03;
-    </script>
-    <audio id="music" autoplay loop controls>
+        audio.volume = 0.15;
+    </script> 
+    <audio id="music" autoplay, loop, controls>
         <source src="/static/tyrell_corporation.wav">
     </audio>
     <script>
         var music = document.getElementById("music");
-        music.volume = 0.03;
-    </script>
+        music.volume = 0.1;
+    </script> 
     <section class="section1">
         <div class="name">
             <h1>Baljinnyam "Jin" Rentsendorj</h1>
@@ -119,9 +126,6 @@
             </div>
         </div>
     </section>
-    <!-- Project Video  -->
-    <video id="video" playsinline webkit-playsinline loop autoplay width="1290" height="1040"
-        src="../static/videos/gymbois_demo.mp4" style="display: none"></video>
     <!-- Scroll reveals  -->
     <script>
         ScrollReveal({
@@ -147,4 +151,5 @@
         })
     </script>
 </body>
+
 </html>
