@@ -34,21 +34,17 @@
 </head>
 <div id="preloader"></div>
 <body>
-    <!-- Project Video  -->
-    <!-- <video id="video" playsinline webkit-playsinline loop autoplay width="1290" height="1040"
-        src="../static/videos/gymbois_demo.mp4" style="display: none">
-    </video> -->
     <!-- WebGL -->
     <canvas class="webgl"></canvas>
     <!-- Audio -->
-    <audio id="audio" allow="autoplay" loop>
+    <audio id="audio" autoplay loop>
         <source src="/static/rain.mp3">
     </audio> 
     <script>
         var audio = document.getElementById("audio");
         audio.volume = 0.15;
     </script> 
-    <audio id="music" autoplay, loop, controls>
+    <audio id="music" autoplay loop controls>
         <source src="/static/tyrell_corporation.wav">
     </audio>
     <script>
