@@ -1,3 +1,5 @@
+Portfolio link: https://jinspub.vercel.app/
+
 Jin's Pub: Creative personal portfolio app for showcasin past and present tech projects.
 
 TECHSTACK: JavaScript, Three.js, HTML, CSS, JQuery
